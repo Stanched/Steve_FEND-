@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    font-family: sans-self;
+    height: 1000px;
+    
+    margin: 0;
+    grid-template-columns: 10% auto;
+    grid-template-rows: 80px auto 80px;
+    grid-template-areas: "hd hd"
+                    "sidebar main"
+                    "footer footer";
+    justify-items: center;
+    
+}
+
+header,
+aside,
+main,
+footer {
+    padding: 16px;
+    text-align: center;
+    align-items: center;
+}
+
+header {
+   background: red;
+   grid-area: hd; 
+   width: 100%;
+}
+
+aside {
+    background:#fa923f;
+    grid-area: sidebar;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    align-items: space-between;
+    
+}
+
+footer {
+    background: black;
+    grid-area: footer;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    gap: 10px;
+}
+
+list-item {
+    text-decoration: none;
+    color: white;
+
+
+}
+
+.container {
+    display: grid;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+    
+    
+
+
+ main, img {
+width: 100%;
+border: 1px lightblue ;
+border-radius: 2px;
+align-items: center;
+align-items: space-between;
+padding: 10px;
+
+
+ }
+
+  main,.description {
+    display: grid;
+    padding: 10px;
+    gap: 10px; 
+    align-items: space-between;
+    border: 2px lightblue;
+    border-radius: 2px;
+ }
+
+ main, .attractions {
+    display: grid;
+    width: 100%;
+    align-items: space-between;
+    border: 1px lightblue;
+    border-radius: 2px;
+ }
+
+
+  @media (min-width: 600px) and (max-width: 900px) {
+    .container {
+    display: grid;
+    font-family: sans-self;
+    height: 1000px;
+    margin: 0px;
+    grid-template-columns: 10% auto;
+    grid-template-rows: 80px auto 80px;
+    grid-template-areas: "hd hd"
+                    "sidebar main"
+                    "footer footer";
+    justify-items: center;
+    
+}
+
+
+    
+ 
+
+
+
+   
